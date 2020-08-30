@@ -30,16 +30,25 @@ $count = trim($count, ",");
     <title>Statistiques</title>
 
     <style>
-
+        .body2 {
+            background-color: lightgrey;
+        }
+        .chart {
+            background-color: rgb(86, 162, 54);
+            
+        }
+        .titre {
+            text-align: center;
+        }
     </style>
 </head>
 
-<body>
+<body class="body2">
 
     <div class="container">
-        <h3>Graph des mots et expressions recherché(e)s sur le site</h3>
+        <h3 class="titre">Graph des mots et expressions recherché(e)s sur le site</h3>
 
-        <canvas id="chart" style="width: 100%; height: 60%; background:#FFF; border: 1px solid #555652; margin-top: 10px;"></canvas>
+        <canvas class="chart" id="chart" style="width: 200px; height: 40px; border: 2px solid #000000; margin-top: 10px;"></canvas>
 
         <script>
             var ctx = document.getElementById("chart").getContext("2d");
