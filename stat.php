@@ -44,10 +44,12 @@ $count = trim($count, ",");
 </head>
 
 <body class="body2">
-
+    
+    
+  <h1> <a href="dbd.php"> ACCEUIL </a> </h1>
     <div class="container">
         <h3 class="titre">Graph des mots et expressions recherché(e)s sur le site</h3>
-
+    <hr>
         <canvas class="chart" id="chart" style="width: 200px; height: 40px; border: 2px solid #000000; margin-top: 10px;"></canvas>
 
         <script>
