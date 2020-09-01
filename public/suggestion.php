@@ -109,7 +109,7 @@ session_start();
 
     if ($resultats) {
       echo '<script language="Javascript">';
-      echo 'document.location.replace("../dbd.php")'; // -->
+      echo 'document.location.replace("index.php")'; // -->
       echo ' </script>';
 
       echo "";
