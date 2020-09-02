@@ -282,21 +282,21 @@ form button{
                 </div>
             </div>
             <div class="row">
-                <div class="col col-sm-6">
+                <div class="col col-sm-4">
                     <textarea class="textarea" name="champ1" id="champ1" cols="50" rows="5" onkeyup="check();"></textarea>
                 </div>
-                <div class="col col-sm-6">
+                <div class="col col-sm-5">
 
                 </div>
             </div>
             <div class="row">
-                <div class="col col-sm-6">
+                <div class="col col-sm-2">
                     <input type="submit" value="Traduire" name="Traduire" class="btn btn-success">
                 </div>
             </div>
         </form>
-
-        <div class="tradwindow" id="champ1status">
+<div class="row">
+        <div class="tradwindow" id="champ1status col-lg-6 ">
             <?php
 
 
@@ -337,6 +337,8 @@ if (isset($_POST['Traduire'])) {
           </div>
           </div>
           </div>
+          
+
           <?php  }else{
             echo "<p>aucune traduction trouvé </p><br><p class='text-sm'><a href='suggestion.php'>Soumettre une traduction ?</a></p>";
           }
@@ -352,6 +354,7 @@ else{
 ?>
         </div>
     </div>
+    
     <!--  -->
 
 
